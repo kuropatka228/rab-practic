@@ -5,6 +5,7 @@ $host = "amvera-daq-x-electrobus-run-zab-eco";
 $db = "zab-eco";
 $dbh = 'mysql:host=' . $host . ';dbname=' . $db . ';charset=utf8';
 $pdo = new PDO($dbh, $user, $password);
+$port="3306";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST["phone"]; 
